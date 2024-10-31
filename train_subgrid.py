@@ -213,18 +213,10 @@ for i in range(epochs):
     print(f'    trn loss: {trn_l}')
     print(f'    val loss: {val_l}')
     print(f'    tst loss: {tst_l}')
-    # print(f'          Cs: {params_swa[0]}')
+    print(f'          Cs: {params_swa[0]}')
 
-    # with open('params/'+filename, 'wb') as fp:
-    #     pickle.dump(params_swa, fp)
-    # with open('opt_state/'+filename, 'wb') as fp:
-    #     pickle.dump(flax.jax_utils.unreplicate(opt_state), fp)
-    if i==200:
-        optimizer = optax.sgd(learning_rate=1e-5)
-        opt_state = optimizer.init(params)
-    if i>=200:
-        with open(f'stat_models/params/{filename}_{i}', 'wb') as fp:
-            pickle.dump(params_swa, fp)
-        with open(f'stat_models/opt_state/{filename}_{i}', 'wb') as fp:
-            pickle.dump(flax.jax_utils.unreplicate(opt_state), fp)
+    with open('params/'+filename, 'wb') as fp:
+        pickle.dump(params_swa, fp)
+    with open('opt_state/'+filename, 'wb') as fp:
+        pickle.dump(flax.jax_utils.unreplicate(opt_state), fp)
 
