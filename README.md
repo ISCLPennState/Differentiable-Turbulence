@@ -1,3 +1,3 @@
 # Differentiable-Turbulence
-Shankar, V., Chakraborty, D., Viswanathan, V., and Maulik, R., “Differentiable Turbulence: Closure as a partial differential equation constrained optimization”, <i>arXiv e-prints</i>, Art. no. arXiv:2307.03683, 2023. doi:10.48550/arXiv.2307.03683.
+Shankar, V., Chakraborty, D., Viswanathan, V., & Maulik, R. (2025). Differentiable turbulence: Closure as a partial differential equation constrained optimization. Physical Review Fluids, 10(2), 024605.
 
